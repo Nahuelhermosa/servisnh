@@ -1,0 +1,147 @@
+:root {
+    --azul: rgb(31, 101, 252);
+    --naranja:rgb(250, 115, 4);
+    --gris-oscuro: #27262b;
+    --gris-claro: #CCC;
+    --blanco: #FFF;
+    --negro: hsl(0, 0%, 0%);
+    --rojo: rgb(253, 77, 77);
+    --celeste: rgb(118, 200, 255);
+    --amarillo: rgb(248, 163, 5);
+}
+
+body {
+    background-color: var(--negro);
+    background-image: url(fondo-tecnologia-circuito-placa-base-azul-degradado.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    /* Márgen automático me centra los elementos en la pantalla */
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.cabecera,
+.contenido {
+    max-width: 1200px;
+    /* Márgen automático me centra los elementos en la pantalla */
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+.cabecera {
+    display: flex;
+    /* Separar los elementos, cada uno en su esquina */
+    justify-content: space-between;
+    /* Centrarlos verticalmente */
+    align-items: end;
+}
+.cabecera-logo {
+    width: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.cabecera-title {
+    color: var(--blanco);
+    font-size: 35px;
+    
+}
+.nav-lista {
+    background-color: var(--amarillo);
+    /* Eliminar los puntitos de la lista */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid var(--gris-oscuro);
+    /* Redondeamos esquinas */
+    border-radius: 10px;
+    padding: 12px 20px;
+
+    
+    padding-left: 40px;
+}
+.nav-form {
+    flex-grow: 1;
+    text-align: right;
+}
+.nav-link {
+    display: block;
+    color: var(--negro);
+    font-weight: bold;
+    text-decoration: none;
+    border-right: 1px solid var(--amarillo);
+    /* 8 arriba y abajo / 12 a los costados */
+    padding: 2px 12px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/*---foto muestras---*/
+
+.foto-muestras {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: var(--blanco);
+    font-size: 30px;
+    font-weight: bold;
+    
+
+  }
+  
+.foto-muestras img {
+    width: 20%;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+/*---fin foto muestra---*/
+
+.newsletter {
+    background-image: linear-gradient(
+        var(--amarillo),
+        var(--gris-claro)
+    );
+    font-size: 10px;
+    margin-bottom: 10px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid var(--gris-oscuro);
+    /* Redondeamos esquinas */
+    border-radius: 10px;
+    padding: 12px 20px;
+
+    display: flex;
+    /* Centramos en vertical */
+    align-items: center;
+}
+.newsletter-texto {
+    margin-left: 32px;
+}
+.newsletter-parrafo2 {
+    margin-left: 32px;
+}
+.newsletter-form {
+    flex-grow: 1;
+    text-align: right;
+}
+.newsletter-form input[type="submit"] {
+    background: none;
+    border: 0;
+    font-weight: bold;
+    /* Devolvemos "la manito" */
+    cursor: pointer;
+}

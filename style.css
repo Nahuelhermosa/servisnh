@@ -1,5 +1,5 @@
 :root {
-    --azul: rgb(31, 101, 252);
+    --azul: rgb(0, 79, 248);
     --naranja:rgb(250, 115, 4);
     --gris-oscuro: #27262b;
     --gris-claro: #CCC;
@@ -12,7 +12,7 @@
 
 body {
     background-color: var(--negro);
-    background-image: url(fondo-tecnologia-circuito-placa-base-azul-degradado.jpg);
+    background-image: url(surtido-herramientas-casco.jpg);
     background-repeat: repeat;
     background-size: cover;
     
@@ -43,19 +43,25 @@ body {
 }
 .cabecera-logo {
     width: 15%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-left: 850px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    margin-top: 1px;
 }
 
 .cabecera-title {
-    color: var(--blanco);
-    font-size: 35px;
+    color: var(--negro);
+    font-size: 30px;
     
 }
+
+/*---botonera---*/
+
 .nav-lista {
-    background-color: var(--amarillo);
+    background-image: linear-gradient(
+        var(--amarillo),
+        var(--gris-claro)
+    );
     /* Eliminar los puntitos de la lista */
     list-style: none;
     display: flex;
@@ -78,7 +84,7 @@ body {
     color: var(--negro);
     font-weight: bold;
     text-decoration: none;
-    border-right: 1px solid var(--amarillo);
+    border-right: 1px solid var(--gris-claro);
     /* 8 arriba y abajo / 12 a los costados */
     padding: 2px 12px;
 }
@@ -92,7 +98,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-    color: var(--blanco);
+    color: var(--amarillo);
     font-size: 30px;
     font-weight: bold;
     

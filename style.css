@@ -7,7 +7,7 @@
     --negro: hsl(0, 0%, 0%);
     --rojo: rgb(253, 77, 77);
     --celeste: rgb(118, 200, 255);
-    --amarillo: rgb(248, 163, 5);
+    --amarillo: rgb(236, 128, 5);
 }
 
 body {
@@ -18,7 +18,6 @@ body {
     
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
-    /* Márgen automático me centra los elementos en la pantalla */
     margin-left: auto;
     margin-right: auto;
     
@@ -28,7 +27,6 @@ body {
 .cabecera,
 .contenido {
     max-width: 1200px;
-    /* Márgen automático me centra los elementos en la pantalla */
     margin-left: auto;
     margin-right: auto;
     
@@ -36,21 +34,21 @@ body {
 }
 .cabecera {
     display: flex;
-    /* Separar los elementos, cada uno en su esquina */
     justify-content: space-between;
-    /* Centrarlos verticalmente */
     align-items: end;
 }
 .cabecera-logo {
     width: 15%;
     margin-left: 850px;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-bottom: 1px;
     margin-top: 1px;
 }
 
 .cabecera-title {
-    color: var(--negro);
+    
+    color: var(--amarillo);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     font-size: 30px;
     
 }
@@ -62,13 +60,11 @@ body {
         var(--amarillo),
         var(--gris-claro)
     );
-    /* Eliminar los puntitos de la lista */
     list-style: none;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid var(--gris-oscuro);
-    /* Redondeamos esquinas */
+    border: 1px solid var(--negro);
     border-radius: 10px;
     padding: 12px 20px;
 
@@ -84,8 +80,7 @@ body {
     color: var(--negro);
     font-weight: bold;
     text-decoration: none;
-    border-right: 1px solid var(--gris-claro);
-    /* 8 arriba y abajo / 12 a los costados */
+    border-right: 1px solid var(--negro);
     padding: 2px 12px;
 }
 .nav-link:hover {
@@ -99,6 +94,7 @@ body {
     justify-content: center;
     align-items: center; 
     color: var(--amarillo);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     font-size: 30px;
     font-weight: bold;
     
@@ -108,7 +104,7 @@ body {
 .foto-muestras img {
     width: 20%;
     margin-left: 5px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 40px;
     margin-top: 30px;
 }
@@ -126,12 +122,9 @@ body {
     margin-right: auto;
     margin-left: auto;
     border: 1px solid var(--gris-oscuro);
-    /* Redondeamos esquinas */
     border-radius: 10px;
     padding: 12px 20px;
-
     display: flex;
-    /* Centramos en vertical */
     align-items: center;
 }
 .newsletter-texto {

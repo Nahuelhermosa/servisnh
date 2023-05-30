@@ -1,6 +1,6 @@
 :root {
     --azul: rgb(0, 79, 248);
-    --naranja:rgb(250, 115, 4);
+    --amarillo-claro:rgb(248, 207, 24);
     --gris-oscuro: #27262b;
     --gris-claro: #CCC;
     --blanco: #FFF;
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: var(--negro);
+    background-color: var(--gris-claro);
     background-image: url(surtido-herramientas-casco.jpg);
     background-repeat: repeat;
     background-size: cover;
@@ -30,12 +30,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     
-
 }
 .cabecera {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    
+    
 }
 .cabecera-logo {
     width: 15%;
@@ -48,8 +49,8 @@ body {
 .cabecera-title {
     
     color: var(--amarillo);
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    font-size: 30px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 35px;
     
 }
 
@@ -93,11 +94,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-    color: var(--amarillo);
+    color: var(--blanco);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     font-size: 30px;
     font-weight: bold;
-    
+ 
 
   }
   
